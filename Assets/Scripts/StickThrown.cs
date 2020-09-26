@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StickThrown : MonoBehaviour
 {
-
     Vector3 lastPosition = Vector3.zero;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +16,8 @@ public class StickThrown : MonoBehaviour
     {
         float speed = (transform.position - lastPosition).magnitude;
         lastPosition = transform.position;
-        if (transform.position.y <= -0.8f && speed < 0.001)
+
+        if (transform.position.y <= 0.16f && speed < 0.0005f)
         {
             Destroy(this.gameObject);
         }

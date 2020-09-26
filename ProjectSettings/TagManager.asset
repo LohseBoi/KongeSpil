@@ -9,6 +9,9 @@ TagManager:
   - Red Hit
   - Blue Hit
   - Layer
+  - Red Stick
+  - Blue Stick
+  - Ground
   layers:
   - Default
   - TransparentFX

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\SideBorder.cs" />
     <Compile Include="Assets\Scripts\StickThrown.cs" />
     <Compile Include="Assets\Scripts\TargetDown.cs" />
+    <Compile Include="Assets\Scripts\WinCon.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

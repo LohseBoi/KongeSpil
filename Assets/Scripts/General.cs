@@ -7,58 +7,64 @@ public class General : MonoBehaviour
     public GameObject king, redL, blueL, redP, blueP;
     public GameObject[] redT, blueT, redS, blueS, redH, blueH;
     public GameObject stickR, stickB;
+    bool turnRed = true, turnBlue = true;
     // Start is called before the first frame update
     void Start()
     {
         redT = GameObject.FindGameObjectsWithTag("Red Target");
         blueT = GameObject.FindGameObjectsWithTag("Blue Target");
-        StartCoroutine(CheckStick());
-       // StartCoroutine(CheckHit());
+
+       // CheckStick();
+        StartCoroutine(CheckHit());
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        CheckStick();
     }
 
-    IEnumerator CheckStick()
+    void CheckStick()
     {
+        redH = GameObject.FindGameObjectsWithTag("Red Hit");
+        blueH = GameObject.FindGameObjectsWithTag("Blue Hit");
+       
+
         redS = GameObject.FindGameObjectsWithTag("Red Stick");
-        Debug.Log("R = " + redS.Length);
+        blueS = GameObject.FindGameObjectsWithTag("Blue Stick");
+
         if (redS.Length == 0 && redP.activeSelf == true)
         {
-            redP.SetActive(false);
-            blueP.SetActive(true);
-          //  yield return new WaitWhile(() => blueH.Length > 0);
-            while (blueH.Length > 0)
+            if (turnBlue)
             {
-                blueH = GameObject.FindGameObjectsWithTag("Blue Hit");
-                yield return null;
+                Debug.Log("Shift to blue");
+                redP.SetActive(false);
+                blueP.SetActive(true);
+                turnRed = false;
             }
-            Instantiate(stickB);
-            Debug.Log("wtf b");
+            else if (redH.Length == 0)
+            {
+                turnBlue = true;
+                Instantiate(stickR);
+            }
         }
-
-        blueS = GameObject.FindGameObjectsWithTag("Blue Stick");
-        Debug.Log("B = " + blueS.Length);
-        if (blueS.Length == 0 && blueP.activeSelf == true)
+        else if (blueS.Length == 0 && blueP.activeSelf == true)
         {
-            blueP.SetActive(false);
-            redP.SetActive(true);
-            while(redH.Length > 0)
+            if (turnRed)
             {
-                redH = GameObject.FindGameObjectsWithTag("Red Hit");
-                Debug.Log("loop r");
-                yield return null;
+                Debug.Log("Shift to red");
+                blueP.SetActive(false);
+                redP.SetActive(true);
+                turnBlue = false;
             }
-            Instantiate(stickR);
-            Debug.Log("wtf r");
+            else if (blueH.Length == 0)
+            {
+                turnRed = true;
+                Instantiate(stickB);
+            }
         }
-
-        StartCoroutine(CheckStick());
     }
-/*
+
     IEnumerator CheckHit()
     {
         redH = GameObject.FindGameObjectsWithTag("Red Hit");
@@ -76,5 +82,4 @@ public class General : MonoBehaviour
         
         StartCoroutine(CheckHit());
     } 
-    */
 }

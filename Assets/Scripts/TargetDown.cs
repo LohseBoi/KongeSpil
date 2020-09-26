@@ -20,7 +20,7 @@ public class TargetDown : MonoBehaviour
     {
         float speed = (transform.position - lastPosition).magnitude;
         lastPosition = transform.position;
-        if (transform.up.y < 0.2 && speed < 0.000000000000000000000000001 && !hold)
+        if (transform.up.y < 0.2f && speed < 0.000000000000000000000000001f && !hold)
         {
             Kill();
         }
@@ -29,7 +29,11 @@ public class TargetDown : MonoBehaviour
     void Kill()
     {
         if (second)
+        {
             Destroy(this.gameObject);
+            return;
+        }
+            
         else
         {
             switch (team)
@@ -37,9 +41,12 @@ public class TargetDown : MonoBehaviour
                 case 1:
                     //Place on reds table
                     transform.SetPositionAndRotation(new Vector3(Random.Range(3.32f, 4.21f), 0.9f, Random.Range(1.255f, 1.76f)), startRot);
+                    gameObject.tag = "Red Hit";
                     break;
                 case 2:
                     //Place on blues table
+                    transform.SetPositionAndRotation(new Vector3(Random.Range(-0.18f, -1.08f), 0.9f, Random.Range(-1.3f, -1.8f)), startRot);
+                    gameObject.tag = "Blue Hit";
                     break;
                 default:
                     return;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class KnobGrav : MonoBehaviour
 {
@@ -31,5 +32,12 @@ public class KnobGrav : MonoBehaviour
     {
         grav = d;
         _out.text = grav.ToString();
+    }
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.name == "KING")
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 }

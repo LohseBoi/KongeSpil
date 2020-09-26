@@ -6,9 +6,10 @@ public class TargetDown : MonoBehaviour
 {
     public bool second = false;
     bool hold = false;
-    public int team; //
+    public int team; 
     Vector3 lastPosition = Vector3.zero;
     Quaternion startRot;
+    public GameObject table;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,19 +41,20 @@ public class TargetDown : MonoBehaviour
             {
                 case 1:
                     //Place on reds table
-                    transform.SetPositionAndRotation(new Vector3(Random.Range(3.32f, 4.21f), 0.9f, Random.Range(1.255f, 1.76f)), startRot);
+                    //transform.SetPositionAndRotation(new Vector3(Random.Range(4.8f, 5.28f) - (table.transform.position.x - 5.05f), 0.82f, Random.Range(-0.45f, 0.45f) + (table.transform.position.z - 5.05f)), startRot);
+                    transform.SetPositionAndRotation(new Vector3(Random.Range(4.8f, 5.28f), 0.82f, Random.Range(-0.45f, 0.45f)), startRot);
                     gameObject.tag = "Red Hit";
                     break;
                 case 2:
                     //Place on blues table
-                    transform.SetPositionAndRotation(new Vector3(Random.Range(-0.18f, -1.08f), 0.9f, Random.Range(-1.3f, -1.8f)), startRot);
+                    //transform.SetPositionAndRotation(new Vector3(Random.Range(-4.8f, -5.28f) + (table.transform.position.x + 5.05f), 0.82f, Random.Range(-0.45f, 0.45f) + (table.transform.position.z + 5.05f)), startRot
+                    transform.SetPositionAndRotation(new Vector3(Random.Range(-4.8f, -5.28f), 0.82f, Random.Range(-0.45f, 0.45f)), startRot);
                     gameObject.tag = "Blue Hit";
                     break;
                 default:
                     return;
             }
         }
-        gameObject.tag = "Red Hit";
     }
 
     void Stand()

@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 7426951373285858501}
   - component: {fileID: 1527219260017742571}
   - component: {fileID: 3618997450291652424}
+  - component: {fileID: 5368265852505617316}
   m_Layer: 0
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: Red Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,6 +219,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &5368265852505617316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019172504947950812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 1
 --- !u!1 &3280242668999319873
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,9 +248,10 @@ GameObject:
   - component: {fileID: 4752900811431455167}
   - component: {fileID: 4262079433881258176}
   - component: {fileID: 3953897206621971007}
+  - component: {fileID: 6401437445634102830}
   m_Layer: 0
   m_Name: Mid
-  m_TagString: Untagged
+  m_TagString: Red Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -436,6 +452,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &6401437445634102830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3280242668999319873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 1
 --- !u!1 &6720190655369035998
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,9 +481,10 @@ GameObject:
   - component: {fileID: 4193723082132236803}
   - component: {fileID: 7625110190774977794}
   - component: {fileID: 1058280731849784614}
+  - component: {fileID: 7399889452142500958}
   m_Layer: 0
   m_Name: Most Right
-  m_TagString: Untagged
+  m_TagString: Red Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -654,6 +685,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &7399889452142500958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6720190655369035998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 1
 --- !u!1 &7254290502147530933
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,9 +714,10 @@ GameObject:
   - component: {fileID: 321220846454186440}
   - component: {fileID: 1961521936757131744}
   - component: {fileID: 6746032109732357280}
+  - component: {fileID: 3830304381581346161}
   m_Layer: 0
   m_Name: Most Left
-  m_TagString: Untagged
+  m_TagString: Red Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -872,6 +918,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &3830304381581346161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7254290502147530933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 1
 --- !u!1 &8363937445916903184
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,9 +947,10 @@ GameObject:
   - component: {fileID: 3828994276619452308}
   - component: {fileID: 1267699505773883486}
   - component: {fileID: 1400015745838376801}
+  - component: {fileID: 1620273312005844621}
   m_Layer: 0
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: Red Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,6 +1151,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &1620273312005844621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8363937445916903184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 1
 --- !u!1 &8736247130858486211
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 2257004871459714248}
   - component: {fileID: 207402920}
   - component: {fileID: 3533058786891156721}
+  - component: {fileID: 390628910024471633}
   m_Layer: 0
   m_Name: Most Left
-  m_TagString: Untagged
+  m_TagString: Blue Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,6 +219,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &390628910024471633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105735703417934484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 2
 --- !u!1 &952006778022664983
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,9 +248,10 @@ GameObject:
   - component: {fileID: 6588814977589904403}
   - component: {fileID: 1615800120}
   - component: {fileID: 5632326641401574760}
+  - component: {fileID: 2630783180340263249}
   m_Layer: 0
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: Blue Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -436,6 +452,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &2630783180340263249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952006778022664983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 2
 --- !u!1 &1462241679886537096
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,9 +481,10 @@ GameObject:
   - component: {fileID: 643493174438796038}
   - component: {fileID: 1109648605}
   - component: {fileID: 7775466211610892058}
+  - component: {fileID: 2556391026530560794}
   m_Layer: 0
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: Blue Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -654,6 +685,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &2556391026530560794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462241679886537096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 2
 --- !u!1 &5669299761341854132
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,9 +714,10 @@ GameObject:
   - component: {fileID: 1307670979811531264}
   - component: {fileID: 7367051822202639779}
   - component: {fileID: 8028764892842435208}
+  - component: {fileID: 4445016011592579728}
   m_Layer: 0
   m_Name: Mid
-  m_TagString: Untagged
+  m_TagString: Blue Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -872,6 +918,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &4445016011592579728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5669299761341854132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 2
 --- !u!1 &5767146207405176720
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,9 +947,10 @@ GameObject:
   - component: {fileID: 4568760666691306574}
   - component: {fileID: 1183268319}
   - component: {fileID: 6582851264100467161}
+  - component: {fileID: 5663620354163980621}
   m_Layer: 0
   m_Name: Most Right
-  m_TagString: Untagged
+  m_TagString: Blue Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,6 +1151,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &5663620354163980621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5767146207405176720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e61b299b76d4194a9b4b7e6ee0565e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: 0
+  team: 2
 --- !u!1 &5866920671680352022
 GameObject:
   m_ObjectHideFlags: 0

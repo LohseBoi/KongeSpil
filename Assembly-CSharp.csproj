@@ -62,7 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\General.cs" />
     <Compile Include="Assets\Scripts\KnobGrav.cs" />
+    <Compile Include="Assets\Scripts\SideBorder.cs" />
+    <Compile Include="Assets\Scripts\StickThrown.cs" />
+    <Compile Include="Assets\Scripts\TargetDown.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

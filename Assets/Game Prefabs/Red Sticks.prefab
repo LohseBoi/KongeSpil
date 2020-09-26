@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 7780865862323329410}
   - component: {fileID: 1600571303996157736}
   - component: {fileID: 6815225952872184700}
+  - component: {fileID: 79630648}
   m_Layer: 0
   m_Name: Stick 2
-  m_TagString: Untagged
+  m_TagString: Red Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,6 +220,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &79630648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899099729262178266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7372396b6e5d91747bd37309d363e857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1908580354053313522
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,9 +247,10 @@ GameObject:
   - component: {fileID: 225723008723831615}
   - component: {fileID: 7373285047585677421}
   - component: {fileID: 8487460419467439613}
+  - component: {fileID: 717749479}
   m_Layer: 0
   m_Name: Stick 1
-  m_TagString: Untagged
+  m_TagString: Red Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,6 +452,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &717749479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908580354053313522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7372396b6e5d91747bd37309d363e857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4599821133080082261
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,9 +479,10 @@ GameObject:
   - component: {fileID: 5842598418670402842}
   - component: {fileID: 6464292265678884861}
   - component: {fileID: 384639218042150281}
+  - component: {fileID: 492701547}
   m_Layer: 0
   m_Name: Stick 5
-  m_TagString: Untagged
+  m_TagString: Red Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -657,6 +684,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &492701547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4599821133080082261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7372396b6e5d91747bd37309d363e857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4749263085157555707
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,9 +711,10 @@ GameObject:
   - component: {fileID: 8382227093863522215}
   - component: {fileID: 8956537706324348312}
   - component: {fileID: 8888146667054656614}
+  - component: {fileID: 1021805447}
   m_Layer: 0
   m_Name: Stick 6
-  m_TagString: Untagged
+  m_TagString: Red Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -876,6 +916,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &1021805447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4749263085157555707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7372396b6e5d91747bd37309d363e857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7210917017269295063
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,9 +943,10 @@ GameObject:
   - component: {fileID: 8915050604845848081}
   - component: {fileID: 3281655136177060072}
   - component: {fileID: 2618533157857094605}
+  - component: {fileID: 1613317068}
   m_Layer: 0
   m_Name: Stick 3
-  m_TagString: Untagged
+  m_TagString: Red Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1095,6 +1148,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &1613317068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7210917017269295063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7372396b6e5d91747bd37309d363e857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7631810279684537070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,9 +1175,10 @@ GameObject:
   - component: {fileID: 2213386930738977406}
   - component: {fileID: 6620870048384398167}
   - component: {fileID: 5427360063625726854}
+  - component: {fileID: 914080206}
   m_Layer: 0
   m_Name: Stick 4
-  m_TagString: Untagged
+  m_TagString: Red Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1314,6 +1380,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &914080206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7631810279684537070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7372396b6e5d91747bd37309d363e857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8525321130584363695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,7 +1416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8525321130584363695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8392928, y: 0.89548707, z: 1.6090285}
+  m_LocalPosition: {x: 3.619, y: 0.89548707, z: 1.6090285}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 201661149037301824}

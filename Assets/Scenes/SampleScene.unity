@@ -773,6 +773,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5061046791033098368, guid: 68d6b5899f937ff44ad35bb636469624,
+        type: 3}
+      propertyPath: renderModelPrefab
+      value: 
+      objectReference: {fileID: 1000012617731570, guid: 837f93beb9a614743ae3a2c0ada7c388,
+        type: 3}
+    - target: {fileID: 5061046791033311262, guid: 68d6b5899f937ff44ad35bb636469624,
+        type: 3}
+      propertyPath: renderModelPrefab
+      value: 
+      objectReference: {fileID: 1000011547835092, guid: d5082f7d9f947374197e0a97786f4e40,
+        type: 3}
     - target: {fileID: 5061046791039070724, guid: 68d6b5899f937ff44ad35bb636469624,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1604,7 +1616,7 @@ PrefabInstance:
         type: 3}
       propertyPath: bluePlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 635597905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3073c30319a317b40ac581d74cf8f898, type: 3}
 --- !u!1001 &6901202456360120370

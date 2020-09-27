@@ -21,7 +21,11 @@ public class General : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        redT = GameObject.FindGameObjectsWithTag("Red Target");
+        blueT = GameObject.FindGameObjectsWithTag("Blue Target");
+
         CheckStick();
+        CheckMid();
     }
 
     void CheckStick()
@@ -65,6 +69,77 @@ public class General : MonoBehaviour
         }
     }
 
+    void CheckMid()
+    {
+        bool red = false, blue = false;
+        //Red
+        if (redP.activeSelf == true)
+        {
+            for (int i = 0; i < redT.Length; i++)
+            {
+                if (redT[i].transform.position.x > -3.1 && redT[i].transform.position.x < 0)
+                {
+                    red = true;
+                }
+            }
+
+            if (red)
+            {
+                foreach (GameObject g in blueT)
+                {
+                    //g.SetActive(false);
+                    g.GetComponent<Rigidbody>().isKinematic = true;
+                    g.GetComponent<BoxCollider>().enabled = false;
+                    g.GetComponent<MeshRenderer>().enabled = false;
+                }
+            }
+            else if (!red)
+            {
+                foreach (GameObject g in blueT)
+                {
+                    //g.SetActive(true);
+                    g.GetComponent<BoxCollider>().enabled = true;
+                    g.GetComponent<MeshRenderer>().enabled = true;
+                    g.GetComponent<Rigidbody>().isKinematic = false;
+                }
+            }
+        }
+
+
+        //Blue
+        if (blueP.activeSelf == true)
+        {
+            for (int i = 0; i < blueT.Length; i++)
+            {
+                if (blueT[i].transform.position.x > 0 && blueT[i].transform.position.x < 3.1)
+                {
+                    blue = true;
+                }
+            }
+            if (blue)
+            {
+                foreach (GameObject g in redT)
+                {
+                    //g.SetActive(false);
+                    g.GetComponent<Rigidbody>().isKinematic = true;
+                    g.GetComponent<BoxCollider>().enabled = false;
+                    g.GetComponent<MeshRenderer>().enabled = false;
+                }
+            }
+            else if (!blue)
+            {
+                foreach (GameObject g in redT)
+                {
+                    //g.SetActive(true);
+                    g.GetComponent<BoxCollider>().enabled = true;
+                    g.GetComponent<MeshRenderer>().enabled = true;
+                    g.GetComponent<Rigidbody>().isKinematic = false;
+                }
+            }
+        }
+        
+    }
+
     IEnumerator CheckHit()
     {
         redH = GameObject.FindGameObjectsWithTag("Red Hit");
@@ -81,5 +156,5 @@ public class General : MonoBehaviour
         yield return new WaitForSeconds(1);
         
         StartCoroutine(CheckHit());
-    } 
+    }
 }

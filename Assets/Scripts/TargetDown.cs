@@ -62,7 +62,17 @@ public class TargetDown : MonoBehaviour
         GetComponent<Rigidbody>().velocity = Vector3.zero;
         GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         transform.SetPositionAndRotation(transform.position, startRot);
-        gameObject.tag = "Red Target";
+        switch (team)
+        {
+            case 1:
+                gameObject.tag = "Red Target";
+                break;
+            case 2:
+                gameObject.tag = "Blue Target";
+                break;
+            default:
+                return;
+        }
         second = true;
     }
 

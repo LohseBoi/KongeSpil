@@ -1622,4 +1622,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/GameLab/Desktop/Kongespil Builds/Ver. 1.0/KongeSpil.exe
+  playerPath: C:/Users/GameLab/Desktop/Kongespil Builds/Ver. 1.1/KongeSpil.exe
